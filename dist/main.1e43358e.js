@@ -8884,7 +8884,7 @@ function patchScopedSlots (instance) {
   }
 }
 
-},{}],"src/components/viewPdf.vue":[function(require,module,exports) {
+},{}],"src/App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8896,82 +8896,20 @@ exports.default = void 0;
 //
 //
 //
-// // import pdf from 'vue-pdf'
-// import pdf from "vue-pdf"
-var _default = {
-  components: {// pdf
-  }
-};
-exports.default = _default;
-        var $54a953 = exports.default || module.exports;
-      
-      if (typeof $54a953 === 'function') {
-        $54a953 = $54a953.options;
-      }
-    
-        /* template */
-        Object.assign($54a953, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("h2", [_vm._v("View PDF")])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$54a953', $54a953);
-          } else {
-            api.reload('$54a953', $54a953);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _viewPdf = _interopRequireDefault(require("./components/viewPdf"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
 //
 //
 var _default = {
-  components: {
-    viewPdf: _viewPdf.default
+  components: {},
+  data: function data() {
+    return {
+      isLogin: false
+    };
+  },
+  methods: {
+    showPageToggle: function showPageToggle() {}
+  },
+  created: function created() {
+    var token = localStorage.getItem("token");
   }
 };
 exports.default = _default;
@@ -8987,9 +8925,16 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("h1", [_vm._v("Coba")]), _vm._v(" "), _c("viewPdf")], 1)
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h1", [_vm._v("Coba")])])
+  }
+]
 render._withStripped = true
 
           return {
@@ -9022,7 +8967,7 @@ render._withStripped = true
       
       }
     })();
-},{"./components/viewPdf":"src/components/viewPdf.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -9062,7 +9007,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33551" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45155" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -10,6 +10,23 @@
 export default {
     components : {
     
+    },
+    data(){
+        return {
+            isLogin : false
+        }
+    },
+    methods : {
+
+        showPageToggle(){
+
+
+        }
+    },
+    created(){
+
+        let token = localStorage.getItem("token")
+
     }
 
 }

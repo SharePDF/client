@@ -4,6 +4,7 @@
       <loginForm @loginCondition="loginCondition"  @fromLoginform="loginToggle"  v-if="!isLogin&&isLoginForm"></loginForm>
       <registerForm @loginCondition="loginCondition" @fromRegisterForm="loginToggle" v-if="!isLogin&&!isLoginForm"></registerForm>  
       <!-- <h1>Coba</h1> -->
+      <createPdf></createPdf>
       <pdfList></pdfList>
   </div>
 </template>
@@ -13,12 +14,14 @@ import navbar from './components/navbar'
 import loginForm from './components/loginForm'
 import registerForm from './components/registerForm'
 import pdfList from './components/pdfList'
+import createPdf from './components/createPdf'
 export default {
     components : {
         navbar,
         loginForm,
         registerForm,
-        pdfList
+        pdfList,
+        createPdf
     },
     data(){
         return {

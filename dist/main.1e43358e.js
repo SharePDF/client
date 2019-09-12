@@ -11503,7 +11503,205 @@ render._withStripped = true
       
       }
     })();
-},{"./pdfItem":"src/components/pdfItem.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
+},{"./pdfItem":"src/components/pdfItem.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/createPdf.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _axios = _interopRequireDefault(require("axios"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      formCreatePdf: {
+        title: "",
+        description: ""
+      }
+    };
+  },
+  methods: {
+    createPDF: function createPDF() {
+      var token = localStorage.getItem("token");
+      var _this$formCreatePdf = this.formCreatePdf,
+          title = _this$formCreatePdf.title,
+          description = _this$formCreatePdf.description;
+      (0, _axios.default)({
+        url: "http://localhost:3000/pdf",
+        method: "POST",
+        headers: {
+          token: token
+        }
+      }).then(function (response) {
+        console.log(response.data);
+      }).catch(next);
+    }
+  },
+  created: function created() {}
+};
+exports.default = _default;
+        var $27d462 = exports.default || module.exports;
+      
+      if (typeof $27d462 === 'function') {
+        $27d462 = $27d462.options;
+      }
+    
+        /* template */
+        Object.assign($27d462, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("b-container", [
+        _c(
+          "form",
+          [
+            _c(
+              "b-row",
+              { staticClass: "my-1" },
+              [
+                _c("b-col", { attrs: { sm: "3" } }, [
+                  _c("label", [_vm._v("Title:")])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "b-col",
+                  { attrs: { sm: "9" } },
+                  [_c("b-form-input", { attrs: { type: "text" } })],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-row",
+              { staticClass: "my-1" },
+              [
+                _c("b-col", { attrs: { sm: "3" } }, [
+                  _c("label", [_vm._v("File:")])
+                ]),
+                _vm._v(" "),
+                _c("b-col", { attrs: { sm: "9" } }, [
+                  _c("input", { attrs: { type: "file" } })
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-row",
+              { staticClass: "my-1" },
+              [
+                _c("b-col", { attrs: { sm: "3" } }, [
+                  _c("label", [_vm._v("Description:")])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "b-col",
+                  { attrs: { sm: "9" } },
+                  [
+                    _c("b-form-input", {
+                      attrs: { type: "text", placeholder: "Describe your file" }
+                    })
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("b-button", { attrs: { variant: "outline-primary" } }, [
+              _vm._v("Submit PDF")
+            ]),
+            _vm._v(" "),
+            _c("b-button", { attrs: { variant: "outline-primary" } }, [
+              _vm._v("Close")
+            ])
+          ],
+          1
+        )
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$27d462', $27d462);
+          } else {
+            api.reload('$27d462', $27d462);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11519,8 +11717,11 @@ var _registerForm = _interopRequireDefault(require("./components/registerForm"))
 
 var _pdfList = _interopRequireDefault(require("./components/pdfList"));
 
+var _createPdf = _interopRequireDefault(require("./components/createPdf"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
 //
 //
 //
@@ -11536,7 +11737,8 @@ var _default = {
     navbar: _navbar.default,
     loginForm: _loginForm.default,
     registerForm: _registerForm.default,
-    pdfList: _pdfList.default
+    pdfList: _pdfList.default,
+    createPdf: _createPdf.default
   },
   data: function data() {
     return {
@@ -11593,6 +11795,8 @@ exports.default = _default;
           })
         : _vm._e(),
       _vm._v(" "),
+      _c("createPdf"),
+      _vm._v(" "),
       _c("pdfList")
     ],
     1
@@ -11631,7 +11835,7 @@ render._withStripped = true
       
       }
     })();
-},{"./components/navbar":"src/components/navbar.vue","./components/loginForm":"src/components/loginForm.vue","./components/registerForm":"src/components/registerForm.vue","./components/pdfList":"src/components/pdfList.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/bootstrap-vue/dist/bootstrap-vue.css":[function(require,module,exports) {
+},{"./components/navbar":"src/components/navbar.vue","./components/loginForm":"src/components/loginForm.vue","./components/registerForm":"src/components/registerForm.vue","./components/pdfList":"src/components/pdfList.vue","./components/createPdf":"src/components/createPdf.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/bootstrap-vue/dist/bootstrap-vue.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -46950,7 +47154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35969" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40093" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -4,8 +4,8 @@
       <loginForm @loginCondition="loginCondition"  @fromLoginform="loginToggle"  v-if="!isLogin&&isLoginForm"></loginForm>
       <registerForm @loginCondition="loginCondition" @fromRegisterForm="loginToggle" v-if="!isLogin&&!isLoginForm"></registerForm>  
       <!-- <h1>Coba</h1> -->
-      <createPdf></createPdf>
-      <pdfList></pdfList>
+      <createPdf v-if="isLogin"></createPdf>
+      <pdfList v-if="isLogin"></pdfList>
   </div>
 </template>
 

@@ -1,9 +1,6 @@
 <template>
 <div>
-    <pdfItem></pdfItem>
-    <pdfItem></pdfItem>
-    <pdfItem></pdfItem>
-    <pdfItem></pdfItem>
+    <pdfItem @triggerReload="$emit('triggerReload')"  v-for="pdf in allpdf" :key="pdf._id" v-bind:pdf="pdf"></pdfItem>
 </div>
 </template>
 
@@ -11,6 +8,10 @@
 
 import pdfItem from "./pdfItem"
 export default {
+
+    props : {
+        allpdf : Array
+    },
 
     components : {
         pdfItem

@@ -11343,6 +11343,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
 var _default = {
   props: {
     pdf: Object
@@ -11353,18 +11357,51 @@ var _default = {
 
       console.log(id);
       var token = localStorage.getItem("token");
-      (0, _axios.default)({
-        url: "http://localhost:3000/pdfs/".concat(id),
-        method: "DELETE",
-        headers: {
-          token: token
-        }
-      }).then(function (response) {
-        console.log(response.data);
+      this.$swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then(function (result) {
+        if (result.value) {
+          _this.$swal.showLoading();
 
-        _this.$emit("triggerReload");
+          (0, _axios.default)({
+            url: "http://localhost:3000/pdfs/".concat(id),
+            method: "DELETE",
+            headers: {
+              token: token
+            }
+          }).then(function (response) {
+            console.log(response.data);
+
+            _this.$swal.close();
+
+            _this.$emit("triggerReload");
+
+            _this.$swal.fire("Deleted!", "Your file has been deleted.", "success");
+          }).catch(function (err) {
+            _this.$swal.close();
+
+            console.log(err.response.data);
+            var message = err.response.data && err.response.data.message || "only owner of this pdf can delete";
+
+            _this.$swal.fire({
+              type: "error",
+              title: "failed to delete data",
+              text: message,
+              timer: 2000
+            });
+          });
+        }
       }).catch(function (err) {
-        console.log(err.response.data);
+        _this.$swal.fire({
+          type: "error",
+          title: "failed to delete data"
+        });
       });
     }
   }
@@ -11402,7 +11439,7 @@ exports.default = _default;
           _c("b-card-text", [_vm._v(_vm._s(_vm.pdf.description))]),
           _vm._v(" "),
           _c("a", { attrs: { href: "" + _vm.pdf.url, target: "_blank" } }, [
-            _vm._v(" read detail ")
+            _vm._v("read detail")
           ]),
           _vm._v(" "),
           _c(
@@ -50391,7 +50428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45351" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36359" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

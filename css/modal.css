@@ -3,7 +3,7 @@
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 1000;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -22,15 +22,18 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 15vh auto;
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     /* Could be more or less, depending on screen size */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 70vh;
+    border-radius: 20px;
+
 }
 
 .modal-content>div {
@@ -41,16 +44,51 @@
 .modal-footer {
     justify-content: space-between;
     align-content: center;
+    padding-top: 1vh;
 }
 
-.modal-form {}
+.modal-form {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-bottom: 2px solid black;
+    padding: 2vh 0;
+    border-top: 2px solid black;
+    /* border: 1px dashed black; */
+}
 
+.modal-form div {
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    /* border: 1px dashed black; */
+}
+
+#modal-content {
+    flex-grow: 1;
+}
+
+#modal-description {
+    flex-grow: 2;
+}
+
+.modal-form div #description {
+    flex-grow: 1;
+}
 
 /* The Close Button */
 .close {
     color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
+    align-self: flex-start;
+    font-size: 1.5em;
+    /* border: 1px dashed black; */
+}
+
+.modal-header h2 {
+    flex-grow: 1;
 }
 
 .close:hover,
@@ -58,4 +96,17 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#title {
+    border-radius: 25px;
+    height: 2em;
+    padding-left: 1em;
+    font-size: 1.1em;
+}
+
+#description {
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 5px;
 }

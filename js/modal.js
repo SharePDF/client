@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-    modal.style.display = "block";
+// document.addEventListener("DOMContentLoaded", function (event) {
+//     modal.style.display = "block";
 
-})
+// })
+
+
 
 var modal = document.getElementById("modal-create");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("button-modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -26,4 +28,12 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-} 
+}
+
+function open_modal() {
+    modal.style.display = "block";
+}
+
+function hide_modal() {
+    modal.style.display = "none"
+}

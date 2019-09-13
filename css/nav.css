@@ -10,8 +10,28 @@ nav {
     color: white;
 }
 
+.dashboard-title {
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    padding: 1vh 0;
+}
+
+
 .sidenav-items {
     flex-direction: column;
+
+}
+
+.sidenav-items>div {
+    padding: 1vh 1vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sidenav-items>div:hover {
+    background-color: white;
+    color: #224b8b;
 }
 
 .brand,
@@ -51,6 +71,7 @@ nav {
 
 .sidenav-items div i {
     padding: 0 2vw;
+    width: 2em;
 }
 
 .sidenav-items div p {

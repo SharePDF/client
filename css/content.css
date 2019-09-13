@@ -1,0 +1,23 @@
+#content {
+    background-color: #B2DDFF;
+    flex-grow: 1;
+}
+
+.container {
+    width: 95%;
+    background-color: #6DC1FF;
+    min-height: 90vh;
+    margin: 5vh auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>div {
+    padding-left: 1.5rem
+}
+
+.controller {
+    min-height: 10vh;
+    padding-top: 1.5rem;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,10 +8,136 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div id="app">
 
     </div>
     <script src="./src/main.js"></script>
 </body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Share-PDF</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <div class="brand">
+                <div><img src="assets/img/Share-PDF-logo-production.png" alt=""></div>
+            </div>
+            <div class="profile">
+                <div><img src="https://gravatar.com/avatar/fae9df828dc356170d1c2ca78bfdfe3e?s=40" alt="profile picture">
+                </div>
+                <p>Dashboard</p>
+            </div>
+            <div class="sidenav-items">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <p>
+                        My Collections
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-search"></i>
+                    <p>
+                        Browse
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-search"></i>
+                    <p>
+                        Favorites
+                    </p>
+                </div>
+            </div>
+        </nav>
+
+        <section id="content">
+            <div class="container">
+                <div class="controller">
+                    <div>
+                        <h1>PDFs</h1>
+                    </div>
+                    <div><button id="myBtn">Open Modal</button></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="page-content">
+                    Page-Content
+                </div>
+            </div>
+        </section>
+
+        <section id="login" style="display: none">
+            <div class="login-container">
+                <div class="huge-logo">
+                    <img src="assets/img/Share-PDF-logo-production.png" alt="share-pdf">
+                </div>
+                <div class="login-form">
+                    <div class="login-header">
+                        <form action="" id="login-form">
+                            <div>
+                                <h2>Login</h2>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Enter your password">
+                            </div>
+                            <div>
+                                <button type="submit" class="button-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="login-footer">
+                        <a href="#">Haven't join us yet? Sign Up here!</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="modals">
+            <div id="modal-create" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        header
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-form">
+                        <p>Some text in the Modal..</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        footer
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- <script src="js/modal.js"></script> -->
+    <script src="https://kit.fontawesome.com/396f3f0150.js"></script>
+</body>
+
 </html>

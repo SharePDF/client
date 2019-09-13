@@ -8,6 +8,7 @@ nav {
     padding: 0 1vw;
     background-color: #224b8b;
     color: white;
+    justify-content: flex-start;
 }
 
 .dashboard-title {
@@ -20,7 +21,7 @@ nav {
 
 .sidenav-items {
     flex-direction: column;
-
+    flex-grow: 1;
 }
 
 .sidenav-items>div {
@@ -76,4 +77,28 @@ nav {
 
 .sidenav-items div p {
     flex-grow: 1;
+}
+
+.logout {
+    align-self: center;
+    margin-bottom: 2vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 25px;
+}
+
+/* .logout a {
+    color: white;
+} */
+
+/* .logout a:hover {
+    background-color: white;
+    color: #224b8b;
+} */
+
+.logout:hover {
+    background-color: white;
+    color: #224b8b;
 }

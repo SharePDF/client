@@ -1,3 +1,391 @@
+/* CSS navbar */
+nav[data-v-b97cf7],
+nav div[data-v-b97cf7] {
+  display: flex;
+}
+nav[data-v-b97cf7] {
+  flex-direction: column;
+  padding: 0 1vw;
+  background-color: #224b8b;
+  color: white;
+  justify-content: flex-start;
+}
+.dashboard-title[data-v-b97cf7] {
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid white;
+  padding: 1vh 0;
+}
+.sidenav-items[data-v-b97cf7] {
+  flex-direction: column;
+  flex-grow: 1;
+}
+.sidenav-items > div[data-v-b97cf7] {
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sidenav-items > div[data-v-b97cf7]:hover {
+  background-color: white;
+  color: #224b8b;
+}
+.brand[data-v-b97cf7],
+.profile[data-v-b97cf7] {
+  align-items: center;
+  justify-content: space-around;
+  margin: 1vh 0;
+}
+.brand[data-v-b97cf7] {
+  min-height: 8vh;
+}
+.brand img[data-v-b97cf7] {
+  max-height: 10vh;
+}
+.profile[data-v-b97cf7] {
+  min-width: 10vw;
+}
+.profile img[data-v-b97cf7] {
+  border-radius: 50%;
+  margin: 0 1vw;
+}
+.profile p[data-v-b97cf7] {
+  flex-grow: 1;
+  text-align: center;
+}
+.sidenav-items > div[data-v-b97cf7] {
+  margin: 1.5vh 0;
+  display: flex;
+  align-items: center;
+}
+.sidenav-items div i[data-v-b97cf7] {
+  padding: 0 2vw;
+  width: 2em;
+}
+.sidenav-items div p[data-v-b97cf7] {
+  flex-grow: 1;
+}
+.logout[data-v-b97cf7] {
+  align-self: center;
+  margin-bottom: 2vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 25px;
+}
+
+/* .logout a {
+    color: white;
+} */
+
+/* .logout a:hover {
+    background-color: white;
+    color: #224b8b;
+} */
+.logout[data-v-b97cf7]:hover {
+  background-color: white;
+  color: #224b8b;
+}
+
+/* -------------------------------------CSS MODAL CREATE PDF ------------------------------------ */
+.modal[data-v-b97cf7] {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content[data-v-b97cf7] {
+  background-color: #fefefe;
+  margin: 15vh auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  border-radius: 20px;
+}
+.modal-content > div[data-v-b97cf7] {
+  display: flex;
+}
+.modal-header[data-v-b97cf7],
+.modal-footer[data-v-b97cf7] {
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 1vh;
+}
+.modal-form[data-v-b97cf7] {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-items: stretch;
+  border-bottom: 2px solid black;
+  padding: 2vh 0;
+  border-top: 2px solid black;
+  /* border: 1px dashed black; */
+}
+.modal-form div[data-v-b97cf7] {
+  display: flex;
+  /* flex-grow: 1; */
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  /* border: 1px dashed black; */
+}
+#modal-content[data-v-b97cf7] {
+  flex-grow: 1;
+}
+#modal-description[data-v-b97cf7] {
+  flex-grow: 2;
+}
+.modal-form div #description[data-v-b97cf7] {
+  flex-grow: 1;
+}
+
+/* The Close Button */
+.close[data-v-b97cf7] {
+  color: #aaa;
+  align-self: flex-start;
+  font-size: 1.5em;
+  /* border: 1px dashed black; */
+}
+.modal-header h2[data-v-b97cf7] {
+  flex-grow: 1;
+}
+.close[data-v-b97cf7]:hover,
+.close[data-v-b97cf7]:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#title[data-v-b97cf7] {
+  border-radius: 25px;
+  height: 2em;
+  padding-left: 1em;
+  font-size: 1.1em;
+}
+#description[data-v-b97cf7] {
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-top: 5px;
+}
+@import url("https://fonts.googleapis.com/css?family=Itim&display=swap");
+#login[data-v-738d0f] {
+  font-family: "Itim", cursive;
+  flex-grow: 1;
+  background-color: #6dc1ff;
+  min-height: 100vh;
+}
+.login-container[data-v-738d0f] {
+  height: 100vh;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container div[data-v-738d0f] {
+  margin: 3vh 0;
+}
+.huge-logo[data-v-738d0f] {
+  height: 40vh;
+  /* border: 1px dashed black;
+    vertical-align: middle;
+    /* ! handled in sign-in-logo */
+  /* height: 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.huge-logo img[data-v-738d0f] {
+  height: 20vh;
+  width: auto;
+}
+.login-form[data-v-738d0f] {
+  background-color: #b2ddff;
+  flex-grow: 1;
+  width: 60%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+#login-form[data-v-738d0f] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px dashed black; */
+  padding: 0 10%;
+}
+#login-form > div[data-v-738d0f] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px dashed black; */
+}
+.login-footer[data-v-738d0f] {
+  display: flex;
+}
+.button-submit[data-v-738d0f],
+.login-footer a[data-v-738d0f],
+#login-form h2[data-v-738d0f] {
+  margin: 0 auto;
+}
+#login-form div input[data-v-738d0f] {
+  flex-grow: 2;
+  max-width: 70%;
+  border-radius: 25px;
+  padding-left: 1em;
+  min-height: 2rem;
+}
+#login-form div label[data-v-738d0f] {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+button[data-v-738d0f] {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+button[data-v-738d0f]:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+button[data-v-738d0f]:active {
+  position: relative;
+  top: 1px;
+}
+@import url("https://fonts.googleapis.com/css?family=Itim&display=swap");
+#register[data-v-cafdb2] {
+  font-family: "Itim", cursive;
+  flex-grow: 1;
+  background-color: #6dc1ff;
+  min-height: 100vh;
+}
+.register-container[data-v-cafdb2] {
+  height: 100vh;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.register-container div[data-v-cafdb2] {
+  margin: 3vh 0;
+}
+.huge-logo[data-v-cafdb2] {
+  height: 40vh;
+  /* border: 1px dashed black;
+    vertical-align: middle;
+    /* ! handled in sign-in-logo */
+  /* height: 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.huge-logo img[data-v-cafdb2] {
+  height: 20vh;
+  width: auto;
+  padding-right: 3vw;
+}
+.register-form[data-v-cafdb2] {
+  background-color: #b2ddff;
+  flex-grow: 1;
+  width: 60%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+#register-form[data-v-cafdb2] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px dashed black; */
+  padding: 0 10%;
+}
+#register-form > div[data-v-cafdb2] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px dashed black; */
+}
+.register-footer[data-v-cafdb2] {
+  display: flex;
+}
+.button-submit[data-v-cafdb2],
+.register-footer a[data-v-cafdb2],
+#register-form h2[data-v-cafdb2] {
+  margin: 0 auto;
+}
+#register-form div input[data-v-cafdb2] {
+  flex-grow: 2;
+  max-width: 70%;
+  border-radius: 25px;
+  padding-left: 1em;
+  min-height: 2rem;
+}
+#register-form div label[data-v-cafdb2] {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+button[data-v-cafdb2] {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+button[data-v-cafdb2]:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+button[data-v-cafdb2]:active {
+  position: relative;
+  top: 1px;
+}
 /*!
  * BootstrapVue Custom CSS (https://bootstrap-vue.js.org)
  */

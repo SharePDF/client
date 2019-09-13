@@ -85,6 +85,7 @@ nav {
   background-color: #224b8b;
   color: white;
   justify-content: flex-start;
+  max-width: 250px;
 }
 
 .dashboard-title {

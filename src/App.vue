@@ -12,8 +12,8 @@
       v-if="!isLogin&&!isLoginForm"
     ></registerForm>
     <!-- <h1>Coba</h1> -->
-    <createPdf v-if="isLogin"></createPdf>
-    <pdfList v-if="isLogin"></pdfList>
+    <createPdf @triggerReload="triggerReload" v-if="isLogin"></createPdf>
+    <pdfList @triggerReload="triggerReload" v-if="isLogin" v-bind:allpdf="allpdf"></pdfList>
   </div>
 </template>
 
@@ -23,6 +23,8 @@ import loginForm from "./components/loginForm";
 import registerForm from "./components/registerForm";
 import pdfList from "./components/pdfList";
 import createPdf from "./components/createPdf";
+import axios from "axios";
+
 export default {
   components: {
     navbar,
@@ -44,11 +46,37 @@ export default {
     loginCondition(cond) {
       this.isLogin = cond;
     },
+    triggerReload() {
+      this.getAllPdf();
+    },
 
-    showPageToggle() {}
+    showPageToggle() {},
+    getAllPdf() {
+      let token = localStorage.getItem("token");
+
+      axios({
+        url: "http://localhost:3000/pdfs",
+        method: "GET",
+        headers: { token }
+      })
+        .then(response => {
+          console.log(response.data);
+          this.allpdf = response.data;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
   },
   created() {
     let token = localStorage.getItem("token");
+
+    if (token) {
+      this.isLogin = true;
+      this.getAllPdf();
+    } else {
+      this.isLogin = false;
+    }
   }
 };
 </script>

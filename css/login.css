@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Itim&display=swap');
+
+#login {
+    font-family: 'Itim', cursive;
+    flex-grow: 1;
+    background-color: #6DC1FF;
+    min-height: 100vh;
+}
+
+.login-container {
+    height: 100vh;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container div {
+    margin: 3vh 0;
+}
+
+.huge-logo {
+    height: 40vh;
+    /* border: 1px dashed black;
+    vertical-align: middle;
+    /* ! handled in sign-in-logo */
+    /* height: 100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.huge-logo img {
+    height: 20vh;
+    width: auto;
+}
+
+.login-form {
+    background-color: #B2DDFF;
+    flex-grow: 1;
+    width: 60%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px dashed black; */
+    padding: 0 10%;
+}
+
+#login-form>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1px dashed black; */
+}
+
+.login-footer {
+    display: flex;
+}
+
+.button-submit,
+.login-footer a,
+#login-form h2 {
+    margin: 0 auto;
+}
+
+#login-form div input {
+    flex-grow: 2;
+    max-width: 70%;
+    border-radius: 25px;
+    padding-left: 1em;
+    min-height: 2rem;
+}
+
+#login-form div label {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 10px;
+}

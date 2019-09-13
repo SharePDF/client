@@ -8542,7 +8542,7 @@ if (inBrowser) {
 
 var _default = Vue;
 exports.default = _default;
-},{}],"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -8574,7 +8574,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -8609,7 +8609,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -8938,14 +8938,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $2ee0c6 = exports.default || module.exports;
+        var $c81b9d = exports.default || module.exports;
       
-      if (typeof $2ee0c6 === 'function') {
-        $2ee0c6 = $2ee0c6.options;
+      if (typeof $c81b9d === 'function') {
+        $c81b9d = $c81b9d.options;
       }
     
         /* template */
-        Object.assign($2ee0c6, (function () {
+        Object.assign($c81b9d, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -9071,9 +9071,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$2ee0c6', $2ee0c6);
+            api.createRecord('$c81b9d', $c81b9d);
           } else {
-            api.reload('$2ee0c6', $2ee0c6);
+            api.reload('$c81b9d', $c81b9d);
           }
         }
 
@@ -9084,7 +9084,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -10060,7 +10060,7 @@ module.exports = function xhrAdapter(config) {
   });
 };
 
-},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"../../../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -10370,7 +10370,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","process":"../../../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/axios/lib/helpers/isAbsoluteURL.js":[function(require,module,exports) {
+},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","process":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/axios/lib/helpers/isAbsoluteURL.js":[function(require,module,exports) {
 'use strict';
 
 /**
@@ -10887,14 +10887,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $a056bd = exports.default || module.exports;
+        var $cd7d33 = exports.default || module.exports;
       
-      if (typeof $a056bd === 'function') {
-        $a056bd = $a056bd.options;
+      if (typeof $cd7d33 === 'function') {
+        $cd7d33 = $cd7d33.options;
       }
     
         /* template */
-        Object.assign($a056bd, (function () {
+        Object.assign($cd7d33, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11036,9 +11036,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$a056bd', $a056bd);
+            api.createRecord('$cd7d33', $cd7d33);
           } else {
-            api.reload('$a056bd', $a056bd);
+            api.reload('$cd7d33', $cd7d33);
           }
         }
 
@@ -11049,7 +11049,7 @@ render._withStripped = true
       
       }
     })();
-},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/registerForm.vue":[function(require,module,exports) {
+},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/registerForm.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11143,14 +11143,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $9a3735 = exports.default || module.exports;
+        var $b41860 = exports.default || module.exports;
       
-      if (typeof $9a3735 === 'function') {
-        $9a3735 = $9a3735.options;
+      if (typeof $b41860 === 'function') {
+        $b41860 = $b41860.options;
       }
     
         /* template */
-        Object.assign($9a3735, (function () {
+        Object.assign($b41860, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11297,9 +11297,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$9a3735', $9a3735);
+            api.createRecord('$b41860', $b41860);
           } else {
-            api.reload('$9a3735', $9a3735);
+            api.reload('$b41860', $b41860);
           }
         }
 
@@ -11310,7 +11310,7 @@ render._withStripped = true
       
       }
     })();
-},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/pdfItem.vue":[function(require,module,exports) {
+},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/pdfItem.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11339,14 +11339,14 @@ exports.default = void 0;
 //
 var _default = {};
 exports.default = _default;
-        var $07e8fe = exports.default || module.exports;
+        var $e5578e = exports.default || module.exports;
       
-      if (typeof $07e8fe === 'function') {
-        $07e8fe = $07e8fe.options;
+      if (typeof $e5578e === 'function') {
+        $e5578e = $e5578e.options;
       }
     
         /* template */
-        Object.assign($07e8fe, (function () {
+        Object.assign($e5578e, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11404,9 +11404,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$07e8fe', $07e8fe);
+            api.createRecord('$e5578e', $e5578e);
           } else {
-            api.reload('$07e8fe', $07e8fe);
+            api.reload('$e5578e', $e5578e);
           }
         }
 
@@ -11417,7 +11417,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/pdfList.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/pdfList.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11444,14 +11444,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $4f1c6f = exports.default || module.exports;
+        var $fe4d2a = exports.default || module.exports;
       
-      if (typeof $4f1c6f === 'function') {
-        $4f1c6f = $4f1c6f.options;
+      if (typeof $fe4d2a === 'function') {
+        $fe4d2a = $fe4d2a.options;
       }
     
         /* template */
-        Object.assign($4f1c6f, (function () {
+        Object.assign($fe4d2a, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11490,9 +11490,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$4f1c6f', $4f1c6f);
+            api.createRecord('$fe4d2a', $fe4d2a);
           } else {
-            api.reload('$4f1c6f', $4f1c6f);
+            api.reload('$fe4d2a', $fe4d2a);
           }
         }
 
@@ -11503,7 +11503,7 @@ render._withStripped = true
       
       }
     })();
-},{"./pdfItem":"src/components/pdfItem.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/createPdf.vue":[function(require,module,exports) {
+},{"./pdfItem":"src/components/pdfItem.vue","_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/createPdf.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11579,14 +11579,14 @@ var _default = {
   created: function created() {}
 };
 exports.default = _default;
-        var $27d462 = exports.default || module.exports;
+        var $e3e982 = exports.default || module.exports;
       
-      if (typeof $27d462 === 'function') {
-        $27d462 = $27d462.options;
+      if (typeof $e3e982 === 'function') {
+        $e3e982 = $e3e982.options;
       }
     
         /* template */
-        Object.assign($27d462, (function () {
+        Object.assign($e3e982, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11688,9 +11688,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$27d462', $27d462);
+            api.createRecord('$e3e982', $e3e982);
           } else {
-            api.reload('$27d462', $27d462);
+            api.reload('$e3e982', $e3e982);
           }
         }
 
@@ -11701,7 +11701,7 @@ render._withStripped = true
       
       }
     })();
-},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
+},{"axios":"node_modules/axios/index.js","_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11760,14 +11760,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $43bbbc = exports.default || module.exports;
+        var $8cfb32 = exports.default || module.exports;
       
-      if (typeof $43bbbc === 'function') {
-        $43bbbc = $43bbbc.options;
+      if (typeof $8cfb32 === 'function') {
+        $8cfb32 = $8cfb32.options;
       }
     
         /* template */
-        Object.assign($43bbbc, (function () {
+        Object.assign($8cfb32, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11822,9 +11822,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$43bbbc', $43bbbc);
+            api.createRecord('$8cfb32', $8cfb32);
           } else {
-            api.reload('$43bbbc', $43bbbc);
+            api.reload('$8cfb32', $8cfb32);
           }
         }
 
@@ -11835,18 +11835,18 @@ render._withStripped = true
       
       }
     })();
-},{"./components/navbar":"src/components/navbar.vue","./components/loginForm":"src/components/loginForm.vue","./components/registerForm":"src/components/registerForm.vue","./components/pdfList":"src/components/pdfList.vue","./components/createPdf":"src/components/createPdf.vue","_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/bootstrap-vue/dist/bootstrap-vue.css":[function(require,module,exports) {
+},{"./components/navbar":"src/components/navbar.vue","./components/loginForm":"src/components/loginForm.vue","./components/registerForm":"src/components/registerForm.vue","./components/pdfList":"src/components/pdfList.vue","./components/createPdf":"src/components/createPdf.vue","_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/bootstrap-vue/dist/bootstrap-vue.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/bootstrap/dist/css/bootstrap.css":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/bootstrap/dist/css/bootstrap.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/bootstrap-vue/esm/utils/vue.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/bootstrap-vue/esm/utils/vue.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11957,7 +11957,7 @@ var getNoWarn = function getNoWarn() {
 };
 
 exports.getNoWarn = getNoWarn;
-},{"process":"../../../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/bootstrap-vue/esm/utils/warn.js":[function(require,module,exports) {
+},{"process":"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/bootstrap-vue/esm/utils/warn.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47126,7 +47126,7 @@ _vue.default.use(_bootstrapVue2.default); // import vuePdf from 'vue-pdf'
 
 
 new _vue.default(_App.default).$mount("#app");
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","./App.vue":"src/App.vue","bootstrap-vue/dist/bootstrap-vue.css":"node_modules/bootstrap-vue/dist/bootstrap-vue.css","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","bootstrap-vue":"node_modules/bootstrap-vue/esm/index.js"}],"../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","./App.vue":"src/App.vue","bootstrap-vue/dist/bootstrap-vue.css":"node_modules/bootstrap-vue/dist/bootstrap-vue.css","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","bootstrap-vue":"node_modules/bootstrap-vue/esm/index.js"}],"../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -47154,7 +47154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44005" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36141" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -47329,5 +47329,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
+},{}]},{},["../../../../../../.nvm/versions/node/v12.0.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
 //# sourceMappingURL=/main.1e43358e.js.map

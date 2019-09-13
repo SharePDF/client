@@ -37,3 +37,10 @@ function open_modal() {
 function hide_modal() {
     modal.style.display = "none"
 }
+
+const createPDF = document.getElementById('create-pdf')
+
+createPDF.addEventListener("submit", function (event) {
+    event.preventDefault();
+    hide_modal();
+})

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/modal.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -17,7 +17,7 @@
 
 <body>
     <div id="app">
-        <nav>
+        <nav style="display: none">
             <div class="brand">
                 <div><img src="assets/img/Share-PDF-logo-production.png" alt=""></div>
             </div>
@@ -56,7 +56,7 @@
             </div>
         </nav>
 
-        <section id="content">
+        <section id="content" style="display: none">
             <div class="container">
                 <div class="controller">
                     <div>
@@ -81,7 +81,7 @@
                     <div class="login-header">
                         <form action="" id="login-form">
                             <div>
-                                <h2>Login</h2>
+                                <h2>login</h2>
                             </div>
                             <div>
                                 <label for="email">Email</label>
@@ -103,32 +103,62 @@
             </div>
 
         </section>
+        <section id="register">
+            <div class="register-container">
+                <div class="huge-logo">
+                    <img src="assets/img/Share-PDF-logo-production.png" alt="share-pdf">
+                </div>
+                <div class="register-form">
+                    <div class="register-header">
+                        <form action="" id="register-form">
+                            <div>
+                                <h2>Register</h2>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Enter your password">
+                            </div>
+                            <div>
+                                <button type="submit" class="button-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
         <section id="modals">
             <div id="modal-create" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2>
-                            Create
-                        </h2>
-                        <span class="close">&times;</span>
-                        <!-- <i class="far fa-window-close close"></i> -->
-                    </div>
-                    <div class="modal-form">
-                        <div id="modal-title">
-                            <label for="title">Title</label>
-                            <input type="text" name="title" id="title">
+                <form action="" id="create-pdf">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>
+                                Create
+                            </h2>
+                            <span class="close">&times;</span>
+                            <!-- <i class="far fa-window-close close"></i> -->
                         </div>
-                        <div id="modal-description">
-                            <label for="description">Description</label>
-                            <textarea name="description" id="description"></textarea>
+                        <div class="modal-form">
+                            <div id="modal-title">
+                                <label for="title">Title</label>
+                                <input type="text" name="title" id="title">
+                            </div>
+                            <div id="modal-description">
+                                <label for="description">Description</label>
+                                <textarea name="description" id="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit">Create</button>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit">Submit</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </section>
     </div>

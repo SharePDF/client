@@ -12,15 +12,8 @@
     >
       <b-card-text>{{pdf.description}}</b-card-text>
       <a :href="''+pdf.url" target="_blank"> read detail </a>
-      <!-- <div
-        class="fb-share-button"
-        :data-href="pdf.url"
-        data-layout="button_count"
-        data-size="large">
-      </div> -->
-      <button class="fb-share-button"  :data-href="pdf.url" >share button</button>
-      <!-- <button class="fb-share-button btn btn-primary" data-layout="button_count"  :data-href="pdf.url">share</button> -->
-        <!-- <a target="_blank" :href="''+pdf.url" class="fb-xfbml-parse-ignore">Bagikan</a> -->
+   
+        <a class="facebook"  :href="'http://www.facebook.com/sharer.php?+u='+pdf.url+'&t='" title="share on facebok" onclick="window.open(this.href); return false;">Share on Facebook</a>
         <button id="deletePDF" class="btn btn-primary" @click.prevent="removeArticle(pdf._id)">delete</button>
     </b-card>
   </div>

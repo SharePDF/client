@@ -73,6 +73,8 @@ export default {
         .then(response => {
           // console.log(response.data);
           this.$emit("triggerReload")
+        
+          // FB.XFBML.parse();
           this.$swal.close()
           this.$swal.fire({
             type : "success",

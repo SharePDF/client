@@ -11343,13 +11343,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 var _default = {
   props: {
     pdf: Object
@@ -11413,12 +11406,19 @@ exports.default = _default;
           ]),
           _vm._v(" "),
           _c(
-            "button",
+            "a",
             {
-              staticClass: "fb-share-button",
-              attrs: { "data-href": _vm.pdf.url }
+              staticClass: "facebook",
+              attrs: {
+                href:
+                  "http://www.facebook.com/sharer.php?+u=" +
+                  _vm.pdf.url +
+                  "&t=",
+                title: "share on facebok",
+                onclick: "window.open(this.href); return false;"
+              }
             },
-            [_vm._v("share button")]
+            [_vm._v("Share on Facebook")]
           ),
           _vm._v(" "),
           _c(
@@ -11487,6 +11487,8 @@ var _pdfItem = _interopRequireDefault(require("./pdfItem"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
 //
 //
 //
@@ -11650,7 +11652,8 @@ var _default = {
         data: bodyFormData
       }).then(function (response) {
         // console.log(response.data);
-        _this.$emit("triggerReload");
+        _this.$emit("triggerReload"); // FB.XFBML.parse();
+
 
         _this.$swal.close();
 
@@ -11859,6 +11862,14 @@ var _axios = _interopRequireDefault(require("axios"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -50380,7 +50391,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34841" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45351" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,8 @@
 <template>
 <div>
-    <pdfItem @triggerReload="$emit('triggerReload')"  v-for="pdf in allpdf" :key="pdf._id" v-bind:pdf="pdf"></pdfItem>
+    <pdfItem @triggerReload="$emit('triggerReload')"  v-for="pdf in allpdf" :key="pdf._id" v-bind:pdf="pdf">
+      
+    </pdfItem>
 </div>
 </template>
 
